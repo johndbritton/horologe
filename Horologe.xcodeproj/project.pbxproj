@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5238D0862596CEBA00B7A068 /* HorologeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238D0852596CEBA00B7A068 /* HorologeApp.swift */; };
+		5238D0882596CEBA00B7A068 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238D0872596CEBA00B7A068 /* ContentView.swift */; };
+		5238D08A2596CEBD00B7A068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5238D0892596CEBD00B7A068 /* Assets.xcassets */; };
+		5238D08D2596CEBD00B7A068 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5238D08C2596CEBD00B7A068 /* Preview Assets.xcassets */; };
+		5238D0992596CEBE00B7A068 /* HorologeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238D0982596CEBE00B7A068 /* HorologeTests.swift */; };
+		5238D0A42596CEBE00B7A068 /* HorologeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238D0A32596CEBE00B7A068 /* HorologeUITests.swift */; };
+		5238D1232596D0EB00B7A068 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5238D0BA2596CF0F00B7A068 /* WidgetKit.framework */; };
+		5238D1242596D0EB00B7A068 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5238D0BC2596CF0F00B7A068 /* SwiftUI.framework */; };
+		5238D1272596D0EB00B7A068 /* HorologeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238D1262596D0EB00B7A068 /* HorologeWidget.swift */; };
+		5238D1292596D0EC00B7A068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5238D1282596D0EC00B7A068 /* Assets.xcassets */; };
+		5238D12E2596D0EC00B7A068 /* HorologeWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5238D1222596D0EB00B7A068 /* HorologeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5238D0952596CEBE00B7A068 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5238D07A2596CEB900B7A068 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5238D0812596CEB900B7A068;
+			remoteInfo = Horologe;
+		};
+		5238D0A02596CEBE00B7A068 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5238D07A2596CEB900B7A068 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5238D0812596CEB900B7A068;
+			remoteInfo = Horologe;
+		};
+		5238D12C2596D0EC00B7A068 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5238D07A2596CEB900B7A068 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5238D1212596D0EB00B7A068;
+			remoteInfo = HorologeWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5238D0CE2596CF1200B7A068 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5238D12E2596D0EC00B7A068 /* HorologeWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5238D0822596CEBA00B7A068 /* Horologe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Horologe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5238D0852596CEBA00B7A068 /* HorologeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorologeApp.swift; sourceTree = "<group>"; };
+		5238D0872596CEBA00B7A068 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5238D0892596CEBD00B7A068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5238D08C2596CEBD00B7A068 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5238D08E2596CEBD00B7A068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5238D08F2596CEBD00B7A068 /* Horologe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Horologe.entitlements; sourceTree = "<group>"; };
+		5238D0942596CEBE00B7A068 /* HorologeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HorologeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5238D0982596CEBE00B7A068 /* HorologeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorologeTests.swift; sourceTree = "<group>"; };
+		5238D09A2596CEBE00B7A068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5238D09F2596CEBE00B7A068 /* HorologeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HorologeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5238D0A32596CEBE00B7A068 /* HorologeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorologeUITests.swift; sourceTree = "<group>"; };
+		5238D0A52596CEBE00B7A068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5238D0BA2596CF0F00B7A068 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5238D0BC2596CF0F00B7A068 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5238D1222596D0EB00B7A068 /* HorologeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HorologeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5238D1262596D0EB00B7A068 /* HorologeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorologeWidget.swift; sourceTree = "<group>"; };
+		5238D1282596D0EC00B7A068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5238D12A2596D0EC00B7A068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5238D12B2596D0EC00B7A068 /* HorologeWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HorologeWidget.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5238D07F2596CEB900B7A068 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5238D0912596CEBE00B7A068 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5238D09C2596CEBE00B7A068 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5238D11F2596D0EB00B7A068 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5238D1242596D0EB00B7A068 /* SwiftUI.framework in Frameworks */,
+				5238D1232596D0EB00B7A068 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5238D0792596CEB900B7A068 = {
+			isa = PBXGroup;
+			children = (
+				5238D0842596CEBA00B7A068 /* Horologe */,
+				5238D0972596CEBE00B7A068 /* HorologeTests */,
+				5238D0A22596CEBE00B7A068 /* HorologeUITests */,
+				5238D1252596D0EB00B7A068 /* HorologeWidget */,
+				5238D0B92596CF0F00B7A068 /* Frameworks */,
+				5238D0832596CEBA00B7A068 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5238D0832596CEBA00B7A068 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5238D0822596CEBA00B7A068 /* Horologe.app */,
+				5238D0942596CEBE00B7A068 /* HorologeTests.xctest */,
+				5238D09F2596CEBE00B7A068 /* HorologeUITests.xctest */,
+				5238D1222596D0EB00B7A068 /* HorologeWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5238D0842596CEBA00B7A068 /* Horologe */ = {
+			isa = PBXGroup;
+			children = (
+				5238D0852596CEBA00B7A068 /* HorologeApp.swift */,
+				5238D0872596CEBA00B7A068 /* ContentView.swift */,
+				5238D0892596CEBD00B7A068 /* Assets.xcassets */,
+				5238D08E2596CEBD00B7A068 /* Info.plist */,
+				5238D08F2596CEBD00B7A068 /* Horologe.entitlements */,
+				5238D08B2596CEBD00B7A068 /* Preview Content */,
+			);
+			path = Horologe;
+			sourceTree = "<group>";
+		};
+		5238D08B2596CEBD00B7A068 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5238D08C2596CEBD00B7A068 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5238D0972596CEBE00B7A068 /* HorologeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5238D0982596CEBE00B7A068 /* HorologeTests.swift */,
+				5238D09A2596CEBE00B7A068 /* Info.plist */,
+			);
+			path = HorologeTests;
+			sourceTree = "<group>";
+		};
+		5238D0A22596CEBE00B7A068 /* HorologeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5238D0A32596CEBE00B7A068 /* HorologeUITests.swift */,
+				5238D0A52596CEBE00B7A068 /* Info.plist */,
+			);
+			path = HorologeUITests;
+			sourceTree = "<group>";
+		};
+		5238D0B92596CF0F00B7A068 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5238D0BA2596CF0F00B7A068 /* WidgetKit.framework */,
+				5238D0BC2596CF0F00B7A068 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5238D1252596D0EB00B7A068 /* HorologeWidget */ = {
+			isa = PBXGroup;
+			children = (
+				5238D1262596D0EB00B7A068 /* HorologeWidget.swift */,
+				5238D1282596D0EC00B7A068 /* Assets.xcassets */,
+				5238D12A2596D0EC00B7A068 /* Info.plist */,
+				5238D12B2596D0EC00B7A068 /* HorologeWidget.entitlements */,
+			);
+			path = HorologeWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5238D0812596CEB900B7A068 /* Horologe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5238D0A82596CEBE00B7A068 /* Build configuration list for PBXNativeTarget "Horologe" */;
+			buildPhases = (
+				5238D07E2596CEB900B7A068 /* Sources */,
+				5238D07F2596CEB900B7A068 /* Frameworks */,
+				5238D0802596CEB900B7A068 /* Resources */,
+				5238D0CE2596CF1200B7A068 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5238D12D2596D0EC00B7A068 /* PBXTargetDependency */,
+			);
+			name = Horologe;
+			productName = Horologe;
+			productReference = 5238D0822596CEBA00B7A068 /* Horologe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5238D0932596CEBE00B7A068 /* HorologeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5238D0AB2596CEBE00B7A068 /* Build configuration list for PBXNativeTarget "HorologeTests" */;
+			buildPhases = (
+				5238D0902596CEBE00B7A068 /* Sources */,
+				5238D0912596CEBE00B7A068 /* Frameworks */,
+				5238D0922596CEBE00B7A068 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5238D0962596CEBE00B7A068 /* PBXTargetDependency */,
+			);
+			name = HorologeTests;
+			productName = HorologeTests;
+			productReference = 5238D0942596CEBE00B7A068 /* HorologeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5238D09E2596CEBE00B7A068 /* HorologeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5238D0AE2596CEBE00B7A068 /* Build configuration list for PBXNativeTarget "HorologeUITests" */;
+			buildPhases = (
+				5238D09B2596CEBE00B7A068 /* Sources */,
+				5238D09C2596CEBE00B7A068 /* Frameworks */,
+				5238D09D2596CEBE00B7A068 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5238D0A12596CEBE00B7A068 /* PBXTargetDependency */,
+			);
+			name = HorologeUITests;
+			productName = HorologeUITests;
+			productReference = 5238D09F2596CEBE00B7A068 /* HorologeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5238D1212596D0EB00B7A068 /* HorologeWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5238D12F2596D0EC00B7A068 /* Build configuration list for PBXNativeTarget "HorologeWidgetExtension" */;
+			buildPhases = (
+				5238D11E2596D0EB00B7A068 /* Sources */,
+				5238D11F2596D0EB00B7A068 /* Frameworks */,
+				5238D1202596D0EB00B7A068 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HorologeWidgetExtension;
+			productName = HorologeWidgetExtension;
+			productReference = 5238D1222596D0EB00B7A068 /* HorologeWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5238D07A2596CEB900B7A068 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					5238D0812596CEB900B7A068 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					5238D0932596CEBE00B7A068 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 5238D0812596CEB900B7A068;
+					};
+					5238D09E2596CEBE00B7A068 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 5238D0812596CEB900B7A068;
+					};
+					5238D1212596D0EB00B7A068 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 5238D07D2596CEB900B7A068 /* Build configuration list for PBXProject "Horologe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5238D0792596CEB900B7A068;
+			productRefGroup = 5238D0832596CEBA00B7A068 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5238D0812596CEB900B7A068 /* Horologe */,
+				5238D0932596CEBE00B7A068 /* HorologeTests */,
+				5238D09E2596CEBE00B7A068 /* HorologeUITests */,
+				5238D1212596D0EB00B7A068 /* HorologeWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5238D0802596CEB900B7A068 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5238D08D2596CEBD00B7A068 /* Preview Assets.xcassets in Resources */,
+				5238D08A2596CEBD00B7A068 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5238D0922596CEBE00B7A068 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5238D09D2596CEBE00B7A068 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5238D1202596D0EB00B7A068 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5238D1292596D0EC00B7A068 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5238D07E2596CEB900B7A068 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5238D0882596CEBA00B7A068 /* ContentView.swift in Sources */,
+				5238D0862596CEBA00B7A068 /* HorologeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5238D0902596CEBE00B7A068 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5238D0992596CEBE00B7A068 /* HorologeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5238D09B2596CEBE00B7A068 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5238D0A42596CEBE00B7A068 /* HorologeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5238D11E2596D0EB00B7A068 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5238D1272596D0EB00B7A068 /* HorologeWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5238D0962596CEBE00B7A068 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5238D0812596CEB900B7A068 /* Horologe */;
+			targetProxy = 5238D0952596CEBE00B7A068 /* PBXContainerItemProxy */;
+		};
+		5238D0A12596CEBE00B7A068 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5238D0812596CEB900B7A068 /* Horologe */;
+			targetProxy = 5238D0A02596CEBE00B7A068 /* PBXContainerItemProxy */;
+		};
+		5238D12D2596D0EC00B7A068 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5238D1212596D0EB00B7A068 /* HorologeWidgetExtension */;
+			targetProxy = 5238D12C2596D0EC00B7A068 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5238D0A62596CEBE00B7A068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5238D0A72596CEBE00B7A068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5238D0A92596CEBE00B7A068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Horologe/Horologe.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Horologe/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Horologe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johndbritton.Horologe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5238D0AA2596CEBE00B7A068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Horologe/Horologe.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Horologe/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Horologe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johndbritton.Horologe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5238D0AC2596CEBE00B7A068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HorologeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johndbritton.HorologeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Horologe.app/Contents/MacOS/Horologe";
+			};
+			name = Debug;
+		};
+		5238D0AD2596CEBE00B7A068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HorologeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johndbritton.HorologeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Horologe.app/Contents/MacOS/Horologe";
+			};
+			name = Release;
+		};
+		5238D0AF2596CEBE00B7A068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HorologeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johndbritton.HorologeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Horologe;
+			};
+			name = Debug;
+		};
+		5238D0B02596CEBE00B7A068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HorologeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johndbritton.HorologeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Horologe;
+			};
+			name = Release;
+		};
+		5238D1302596D0EC00B7A068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HorologeWidget/HorologeWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HorologeWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johndbritton.Horologe.HorologeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5238D1312596D0EC00B7A068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HorologeWidget/HorologeWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HorologeWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johndbritton.Horologe.HorologeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5238D07D2596CEB900B7A068 /* Build configuration list for PBXProject "Horologe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5238D0A62596CEBE00B7A068 /* Debug */,
+				5238D0A72596CEBE00B7A068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5238D0A82596CEBE00B7A068 /* Build configuration list for PBXNativeTarget "Horologe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5238D0A92596CEBE00B7A068 /* Debug */,
+				5238D0AA2596CEBE00B7A068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5238D0AB2596CEBE00B7A068 /* Build configuration list for PBXNativeTarget "HorologeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5238D0AC2596CEBE00B7A068 /* Debug */,
+				5238D0AD2596CEBE00B7A068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5238D0AE2596CEBE00B7A068 /* Build configuration list for PBXNativeTarget "HorologeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5238D0AF2596CEBE00B7A068 /* Debug */,
+				5238D0B02596CEBE00B7A068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5238D12F2596D0EC00B7A068 /* Build configuration list for PBXNativeTarget "HorologeWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5238D1302596D0EC00B7A068 /* Debug */,
+				5238D1312596D0EC00B7A068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5238D07A2596CEB900B7A068 /* Project object */;
+}
